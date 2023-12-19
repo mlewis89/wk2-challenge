@@ -137,11 +137,17 @@ p{
     border:  5px solid var(--color-light);
 }
 
+
+
 /*.work li:hover img{
     opacity: 100%;
 }*/
 .work_img:hover {
     opacity:50%;
+}
+
+.work-text:hover{
+    opacity:100%;
 }
 
 .work li div {
