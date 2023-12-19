@@ -1,75 +1,103 @@
+/*Global variables*/
 :root{
     --color-light : #92cccd;
     --colour-dark :#31343d;
     --section-headings : #445876;
+    --default-padding : 20px;
 }
 
+/*Block for the navigation and hero image*/
 header {
     background-color: var(--colour-dark);
     position: relative;
 }
 
+/*the page title*/
 header h1{
+    font-size:3em;
     background-color: var(--color-light);
     padding: 7px;
 }
 
+/*Header subtitle*/
 header h2{
     background-color: var(--color-light);
     position: absolute;
     bottom: 10px;
     right: 10px;
     padding: 5px;
+    font-size: 2em;
 }
 
+/*Navigation menu - align at end of flex box*/
+header ul { 
+    justify-content: flex-end;
+}
+
+/*Navigation Menu- list items*/
 header li {
     padding: 15px 15px;
     justify-content: flex-end;
     color: var(--color-light);
 }
+
+/*Navigation Menu- list on hover*/
 header li:hover{
     background-color: var(--color-light);
 }
+
+/*-----toclean up ---*/
+/* fix text color of links*/
 header a {
     color: var(--color-light);
 }
 
-header ul { 
-    justify-content: flex-end;
-}
-
+/*container for main content*/
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 1100px;
 }
 
+/*each section of of the main*/
 main section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     
 }
 
+/*Section Headings*/
 main section h2 {
-    padding: 50px;
-}
+    font-size: 3em;
+    color: var(--section-headings);
+    padding: var(--default-padding);
+    border-right: 4px solid var(--section-headings);
+    margin: 10px 30px 10px 10px;
+    min-width: 300px;
 
+
+}
+/*make all ul components a flex container*/
 ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#contact-me li {
-    padding: 5px, 10px;
-    
-}
-
-img {
+img{
     width: 100%;
     height: 100%;
 }
 
+p{
+    max-width: 100%;
+    padding: var(--default-padding);
+}
 
 
 .top-bar{
@@ -88,7 +116,7 @@ img {
 .work {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
 }
 
@@ -100,14 +128,31 @@ img {
 .work li {
     max-width: 50%;
     max-height: 400px;
-    padding: 20px;
+    padding: var(--default-padding);
     position: relative;
+}
+
+.work img{
+    opacity: 100%;
+    border:  5px solid var(--color-light);
+}
+
+/*.work li:hover img{
+    opacity: 100%;
+}*/
+.work_img:hover {
+    opacity:50%;
 }
 
 .work li div {
     background-color: var(--color-light);
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
+    padding: 15px 15px 15px 40px;
+}
+
+.work h3{
+    font-size: 1.25em;
 }
 
 #work-item-large {
@@ -115,7 +160,13 @@ img {
     max-height: 800px;
 }
 
-@media screen and (max-width:580px) {
+#contact-me li {
+    padding: var(--default-padding) 0px;
+    color: red;
+    
+}
+
+@media screen and (max-width:700px) {
 
     header ul { 
         flex-direction: column;
@@ -125,5 +176,32 @@ img {
         flex-direction: column;
     }
 
+    .work li {
+        max-width: 100%;
+        max-height: fit-content;
+    }
+
+    .work {
+        flex-direction: column;
     
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    main section {
+        flex-direction: column;
+    }
+    
+    #work-item-large {
+        max-width: 100%;
+    }
+    main section h2 {
+        font-size: 2em;
+        color: var(--section-headings);
+        border-right: 0;
+        padding: 10px;
+    
+    }
 }
