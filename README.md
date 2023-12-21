@@ -43,6 +43,10 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
+## Usage
+
+the completed project can be veiwed via github pages as below.
+https://mlewis89.github.io/wk2-challenge/
 
 
 ## Screen Shots of Completed Challenge
@@ -56,11 +60,6 @@ Responsive design for mobiles
 ## Installation
 
 The project files are within the /root folder of this repo, please explore index.html and /asests/style.css.
-
-## Usage
-
-the completed project can be veiwed via github pages as below.
-https://mlewis89.github.io/wk2-challenge/
 
 
 ## Credits
