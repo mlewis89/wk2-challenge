@@ -17,28 +17,28 @@
             <h1>Mark Lewis</h1>
 
             <!--Navigation-->
-            <nav>
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#work-section">Work</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
-
+            <nav  class="flex-container" id="nav-bar">
+                <a href="#about-me">About Me</a>
+                <a href="#work-section">Work</a>
+                <a href="#contact-me">Contact Me</a>
+                <a href="https://www.linkedin.com/in/mark-lewis-1948b233/">Resume</a>
             </nav>
         </div>
         <div class="hero">
             <!--Header Image-->
             <img class="hero-image" src="./assets/2023_05_21_2728.jpg" alt="hero image" />
             <!--sub title-->
-            <h2>Cool subtitle here!</h2>
+            <div class="hero-sub-title">
+                <h2>Explore, Dream, Discover</h2>
+                <p>Mark Twain</p>
+            </div>
         </div>
     </header>
     <main>
         <section id="about-me">
             <!--Section: About me-->
             <h2>About Me</h2>
-            <ul>
+            <ul class="flex-container">
                 <li>
                     <p>I have an avid passion for systems that make everyday tasks easier. Starting my professional
                         career as a robotics and mechatronic engineer has given me a wide base of problem solving
@@ -52,51 +52,56 @@
         <section id="work-section" class="work">
             <!--Section: Work-->
             <h2>Work</h2>
-            <ul>
+            <ul class="flex-container">
                 <li id="work-item-large">
-
-                    <a  class="test-image" href="https://mlewis89.github.io/bootcamp-wk1-challenge/Develop/index.html" target="_blank">
-                        <img class="work_img" src="./assets/wk1-challenge.PNG" alt="Week1 Challenge" />
-                        <div class = "work-text">
+                    <a href="https://mlewis89.github.io/bootcamp-wk1-challenge/Develop/index.html" target="_blank">
+                        <img class="work-image" src="./assets/wk1-challenge.PNG" alt="Week1 Challenge" />
+                        <div class="work-item-text">
                             <h3>HTML CSS GIT</h3>
                             <p>Code Refractor</p>
                         </div>
                     </a>
                 </li>
                 <li>
-                    <div>
-                        <h3>Week 1 Git Repository</h3>
-                        <p>Description</p>
-                    </div>
+
                     <a href="https://github.com/mlewis89/bootcamp-wk1-challenge" target="_blank">
-                        <img src="./assets/PXL_20220910_023339004.jpg" alt="#" />
+
+                        <img class="work-image" src="./assets/PXL_20220910_023339004.jpg" alt="#" />
+                        <div class="work-item-text">
+                            <h3>Week 1 Git Repository</h3>
+                            <p>Description</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li>
+
+                    <a href="https://www.rbg.vic.gov.au/melbourne-gardens/what-s-on-melbourne/lightscape/" target="_blank">
+                        <img  class="work-image" src="./assets/PXL_20220807_103741305.jpg" alt="#" />
+                        <div class="work-item-text">
+                            <h3>Lightscape </h3>
+                            <p>Event Lighting</p>
+                        </div>
                     </a>
                 </li>
                 <li>
-                    <div>
-                        <h3>Scout Group Website</h3>
-                        <p>Wordpress</p>
-                    </div>
-                    <a href="#" target="_blank">
-                        <img src="./assets/PXL_20230318_073422996.jpg" alt="#" />
-                    </a>
-                </li>
-                <li>
-                    <div>
-                        <h3>Perisher Valley</h3>
-                        <p>Snowboarding</p>
-                    </div>
+
                     <a href="https://www.perisher.com.au/" target="_blank">
-                        <img src="./assets/PXL_20220910_023339004.jpg" alt="#" />
+                        <img  class="work-image" src="./assets/PXL_20220910_023339004.jpg" alt="#" />
+                        <div class="work-item-text">
+                            <h3>Perisher Valley</h3>
+                            <p>Snowboarding</p>
+                        </div>
                     </a>
                 </li>
                 <li>
-                    <div>
-                        <h3>Mt Speculation Sunrise</h3>
-                        <p>Overnight Hike</p>
-                    </div>
+
                     <a href="https://maps.app.goo.gl/XotuQqtRjwP3dEwUA" target="_blank">
-                        <img src="./assets/received_935984800753797.jpeg" alt="#" />
+                        <img  class="work-image"  src="./assets/received_935984800753797.jpeg" alt="#" />
+                        <div class="work-item-text">
+                            <h3>Mt Speculation Sunrise</h3>
+                            <p>Overnight Hike</p>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -105,8 +110,8 @@
         <section id="contact-me">
             <!--Section: Contact Me-->
             <h2>Contact Me</h2>
-            <ul>
-                <li><a href="tel:0412 345 678" target="_blank">0412 345 678</a></li>
+            <ul class="flex-container">
+                <li><a href="tel:123456789" target="_blank">1234 456 789</a></li>
                 <li><a href="mailto:mark@website.com.au" target="_blank">mark@website.com.au</a></li>
                 <li><a href="https://github.com/mlewis89/" target="_blank">Git Hub</a></li>
                 <li><a href="https://www.linkedin.com/in/mark-lewis-1948b233/" target="_blank">LinkedIn</a></li>
