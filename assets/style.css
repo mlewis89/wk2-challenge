@@ -176,12 +176,12 @@ main section h2 {
 /*Container for Contact me items - force flex box to take up available space*/
 #contact-me .flex-container {
     width: 100%;
+    align-content: space-around;
 }
 
 /*Contact items*/
 #contact-me a {
     padding: var(--default-padding);
-
     background: linear-gradient(var(--background-color), var(--background-color) 50%, var(--color-light) 50%, var(--color-light));
     background-size: 100% 200%;
     /*trasition effect for background*/
@@ -195,7 +195,8 @@ main section h2 {
     background-position: 100% 100%;
 }
 
-    
+
+
 /*Media Query 1000px*/
 @media screen and (max-width:1000px) {
     .work-item-text {
@@ -203,16 +204,26 @@ main section h2 {
     }
 
 }
+
 /*Media Query 700px - drop to sigle collumn view*/
 @media screen and (max-width:700px) {
 
-
     main section {
         flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
     }
 
-    .flex-container{
+    .top-bar {
         flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
     }
 
     .work li {
